@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.view.AddDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.view"
+        mc:Ignorable="d"
+        Title="AddDialog" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Width="300" Margin="250,0,250,0">
+            <Label Content="FullName" />
+            <TextBox Name="FullNameTextBox" />
+            <Label Content="Telephone" />
+            <TextBox Name="TelephoneTextBox" />
+            <Label Content="Email Address" />
+            <TextBox Name="EmailTextBox" />
+            <Label Content="Birthday" />
+            <DatePicker Name="BirthdayDatePicker" />
+            <Label Content="Password" />
+            <TextBox Name="PasswordBox" />
+            <Label Content="Status" />
+            <ComboBox Name="StatusComboBox">
+                <ComboBoxItem Content="Active" />
+                <ComboBoxItem Content="Deleted" />
+            </ComboBox>
+            <Button Content="Add Customer" Name="AddCustomerButton" Click="AddCustomerButton_Click" Margin="5,10,5,10" Width="200"/>
+        </StackPanel>
+    </Grid>
+</Window>
